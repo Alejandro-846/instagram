@@ -91,7 +91,7 @@ header{
     border: 3.5px solid transparent;
     background: 
     linear-gradient(var(--lorem-item-box),var(--lorem-item-box)) padding-box,  
-    linear-gradient(225deg, #c8c8c8, #e9e9e9, black) border-box;
+    var(--color-gradient) border-box;
     background-clip: padding-box, border-box;
 }
 .div__storyUser-container::before{
@@ -108,7 +108,6 @@ header{
 }
 /***************** lorem **************/
 .div__storyUser-container::after{
-    content: "64 x 54";
     font-family: sans-serif;
     background: transparent;
     width: 100%;
@@ -157,7 +156,7 @@ header{
     border: 2px solid transparent;
     background: 
     linear-gradient(var(--lorem-item-box),var(--lorem-item-box)) padding-box,  
-    linear-gradient(225deg, #c8c8c8, #e9e9e9, black) border-box;
+    var(--color-gradient) border-box;
     background-clip: padding-box, border-box;
 }
 .div__avatarInfo-container::before{
@@ -191,7 +190,21 @@ header{
 .div__avatarInfo-perfil h4{
 
 }
-..div__avatarInfo-perfil span{
+.div__avatarInfo-perfil span{
+    color: var(--color-1);
+    background: var(--lorem-item-box);
+    font-family: "sf-ui-display-thin";
+    font-size: 11px;
+}
+
+.div__post::before{
+    content: url(../storage/img/tags.svg);
+    position: absolute;
+    left: 16px;
+    bottom: 10px;
+    width: 24px;
+    height: 24px;
+
 
 }
 .div__post{
@@ -207,7 +220,6 @@ header{
 }
 /***************** lorem **************/
 .div__post img::after{
-    content: "390 x 390";
     width: 100%;
     height: 100%;
     font-family: sans-serif;
